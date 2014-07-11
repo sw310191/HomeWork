@@ -1,0 +1,42 @@
+﻿@model WebApplication2.Models.報表
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>報表</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.客戶名稱)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.客戶名稱)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.客戶聯絡人數量)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.客戶聯絡人數量)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.客戶銀行帳號數量)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.客戶銀行帳號數量)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
